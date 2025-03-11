@@ -1,11 +1,17 @@
-body {
-}
+:root {
+    --primary-color: #D62327;
+    --secondary-color: #F8B400;
+    --accent-color: #A51D1F;
+    --text-color: #1E1E1E;
+    --background-color: #FAFAFA;
+    --nav-color: #000008;
+  }
 
 .navbar {
     transition: background-color 0.3s ease;
 }
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.8) !important; /* Cambia a negro semi-transparente */
+    background-color: var(--nav-color) !important; /* Cambia a negro semi-transparente */
 }
 
 .hero {
@@ -37,5 +43,5 @@ body {
 /* Sección de contenido */
 .content {
     padding: 100px 20px;
-    background: white;
+    background: var(--background-color);
 }
