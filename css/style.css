@@ -1,13 +1,14 @@
 :root {
     --primary-color: #c21112;
-    --secondary-color: #F8B400;
-    --accent-color: #A51D1F;
+    --hero-color: #00000080;
     --text-color: #1E1E1E;
     --background-color: #FAFAFA;
   }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 .navbar {
@@ -23,13 +24,13 @@ body {
 
 .hero {
     height: 100vh;
-    background: url("https://s10.s3c.es/imag/_v0/665x400/4/f/e/duff.jpg") center/cover no-repeat;
+    background: url("../src/duff.jpg") center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: var(--background-color);
 }
 .hero::before {
     content: "";
@@ -38,7 +39,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Oscurece un poco la imagen */
+    background: var(--hero-color); /* Oscurece un poco la imagen */
 }
 .hero h1 {
     font-size: 4rem;

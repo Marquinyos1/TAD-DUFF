@@ -8,3 +8,13 @@
     text-align: center;
     color: white;
 }
+
+.scrollspy-example {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#list-example .list-group-item.active {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}

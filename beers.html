@@ -77,7 +77,8 @@
                 <div class="col-md-5">
                     <img src="src/1.png"
                         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" alt="Featurette image">
+                        height="500" alt="Duff Original" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Duff Original">
                 </div>
             </div>
 
@@ -114,8 +115,9 @@
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img src="src/2.png"
-                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" alt="Featurette image">
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" alt="Lady Duff" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Lady Duff">
                 </div>
             </div>
 
@@ -155,8 +157,9 @@
                 </div>
                 <div class="col-md-5">
                     <img src="src/3.png"
-                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" alt="Featurette image">
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" alt="Duff Dry" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Duff Dry">
                 </div>
             </div>
 
@@ -192,8 +195,9 @@
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img src="src/4.png"
-                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" alt="Featurette image">
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" alt="Duff Dark" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Duff Dark">
                 </div>
             </div>
 
@@ -213,8 +217,8 @@
                 <div class="col-md-4 mb-3">
                     <h5>Descubre la Cerveza Duff</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Inicio</a></li>
-                        <li><a href="beers.html" class="text-light text-decoration-none">Nuestras Cervezas</a></li>
+                        <li><a href="index.html" class="text-light text-decoration-none">Inicio</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Nuestras Cervezas</a></li>
                         <li><a href="duffman.html" class="text-light text-decoration-none">Duffman</a></li>
                         <li><a href="contacto.html" class="text-light text-decoration-none">Historia</a></li>
                     </ul>
@@ -270,6 +274,13 @@
             } else {
                 navbar.classList.remove("scrolled");
             }
+        });
+    </script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
         });
     </script>
 </body>
