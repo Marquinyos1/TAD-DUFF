@@ -4,14 +4,21 @@
     --accent-color: #A51D1F;
     --text-color: #1E1E1E;
     --background-color: #FAFAFA;
-    --nav-color: #000008;
   }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .navbar {
     transition: background-color 0.3s ease;
 }
 .navbar.scrolled {
     background-color: var(--primary-color) !important; /* Cambia a negro semi-transparente */
+}
+
+.carousel-inner {
+    background-color: var(--secondary-color);
 }
 
 .hero {
