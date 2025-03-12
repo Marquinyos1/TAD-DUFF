@@ -8,3 +8,9 @@
     text-align: center;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .hero {
+        background: url("../src/beers_m.jpg") center/cover no-repeat;
+    }
+}

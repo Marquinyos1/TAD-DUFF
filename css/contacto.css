@@ -9,6 +9,12 @@
     color: white;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        background: url("../src/duff-fondo_m.jpg") center/cover no-repeat;
+    }
+}
+
 .scrollspy-example {
     max-height: 400px;
     overflow-y: auto;
